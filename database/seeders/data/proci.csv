@@ -1,0 +1,45 @@
+id;manufacturer;type;hidden
+1;AMD;Athlon 64 X2 QL64;0
+4;AMD;Athlon TM Neo MV-40;0
+5;AMD;Mobil Sempron SI-40;0
+6;AMD;Turion64 X2 TL60;0
+7;AMD;Turion64 X2 TL64;0
+8;AMD;Turion64 X2 TL62;0
+10;Intel;Celeron 900;0
+12;Intel;Celeron Dual-Core T1600;0
+13;Intel;Celeron Dual-Core T1700;0
+14;Intel;Celeron Dual-Core T3000;0
+17;Intel;Celeron M 560;0
+18;Intel;Centrino Atom 1600;0
+19;Intel;Centrino Atom N270;0
+20;Intel;Centrino Atom N280;0
+21;Intel;Centrino Atom Z520;0
+22;Intel;Centrino Atom Z530;0
+23;Intel;Core Duo T3400;0
+24;Intel;Core2 Duo P7350;0
+25;Intel;Core2 Duo P8400;0
+26;Intel;Core2 Duo P8600;0
+27;Intel;Core2 Duo P8700;0
+28;Intel;Core2 Duo SL9400;0
+29;Intel;Core2 Duo SU7300;0
+30;Intel;Core2 Duo SU9300;0
+31;Intel;Core2 Duo SU9400;0
+32;Intel;Core2 Duo T5670;0
+34;Intel;Core2 Duo T5870;0
+35;Intel;Core2 Duo T6400;0
+36;Intel;Core2 Duo T6500;0
+37;Intel;Core2 Duo T6570;0
+38;Intel;Core2 Duo T6600;0
+39;Intel;Core2 Duo T6670;0
+40;Intel;Core2 Duo T7300;0
+41;Intel;Core2 Duo T7500;0
+42;Intel;Core2 Duo T8300;0
+43;Intel;Core2 Duo T9300;0
+44;Intel;Core2 Duo T9400;0
+45;Intel;Core2 Solo SU3500 ULV;0
+46;Intel;Pentium Dual Core SU4100;0
+48;Intel;Pentium dual-core T4200;0
+49;Intel;Pentium dual-core T4300;0
+51;Intel;Celeron M ULV723;0
+52;VIA;Via Nano ULV 2250;0
+53;AMD;Athlon 64 X2 QL65;0
