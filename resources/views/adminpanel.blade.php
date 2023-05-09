@@ -8,5 +8,12 @@
 </head>
 <body>
     Helo
+    <br>
+
+    <form action="{{route('proci')}}">
+      <input class="btn btn-success" type="submit" value="Processors">
+      
+    </form>
+    <br>
 </body>
 </html>
