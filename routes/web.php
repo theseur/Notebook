@@ -54,3 +54,22 @@ Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
  Route::get('adminpanel', 'App\Http\Controllers\AdminController@get_admincontroler')
         ->middleware('auth')
         ->name('adminpanel');
+
+        Route::get('proci', 'App\Http\Controllers\AdminController@get_proci')
+        ->middleware('auth')
+        ->name('proci');
+        Route::get('editproci/{pizzaid}','App\Http\Controllers\AdminController@edit_proci')
+        ->middleware('auth')
+        ->name('editproci');
+        Route::post('modifyproci/{pizzaid}','App\Http\Controllers\AdminController@modify_proci')
+        ->middleware('auth')
+        ->name('modifyproci');
+        Route::post('deleteproci/{pizzaid}','App\Http\Controllers\AdminController@delete_proci')
+        ->middleware('auth')
+        ->name('deleteproci');
+        Route::get('createproci','App\Http\Controllers\AdminController@create_proci')
+        ->middleware('auth')
+        ->name('createproci');
+        Route::post('insertproci/','App\Http\Controllers\AdminControllerr@insert_proci')
+        ->middleware('auth')
+        ->name('insertproci');
