@@ -130,6 +130,7 @@ class AdminController extends Controller
         //
         var_dump($_POST);
     }
+
     public function get_computer()
     {
        
@@ -191,6 +192,77 @@ class AdminController extends Controller
         else
         {
             return view("computerexists");
+        }
+        //var_dump($_POST);
+    }
+
+    public function get_users()
+    {
+       
+        $datas = DB::table('users')->get();
+        return view("userslist", compact("datas"));
+
+    }
+    public function edit_users(Request $request, $pizzaid=0)
+    {
+        $pizza = DB::table('users')->where('id','=',$pizzaid )->first();
+        return view('editusers', compact("pizza"));
+    }
+    
+    public function modify_users(Request $request, $pizzaid=0)
+    {
+       
+       $pizza = DB::table('users')->where('id','=',$pizzaid ) 
+        ->update(array
+        (
+            'name'=>$_POST["name"],'email'=>$_POST["email"],
+        'password'=>$_POST["password"],
+       
+        'hidden'=>array_key_exists('hidden',$_POST)?1:0,
+        'admin'=>$_POST["admin"],
+        'updated_at'=>$_POST["updated_at"],
+        'created_at'=>$_POST["created_at"]
+    ));
+        /*var_dump($_POST);
+        echo "<br>";
+        var_dump($catprice);*/
+        return Redirect::to('/users');
+        
+    }
+    public function delete_users(Request $request, $pizzaid=0)
+    {
+        
+        $pizza = DB::table('users')->where('id','=',$pizzaid ) 
+        ->update(array('hidden'=>1));
+        return Redirect::to('/users');
+        //return $pizzaid;
+    }
+    public function create_users()
+    {
+        return view("createusers");
+    }
+    public function insert_users()
+    {
+        $pizza = DB::table('users')->where('id','=',$_POST["id"] ) ->count();
+        if($pizza==0)
+        {
+           
+            $values = array(
+                'name'=>$_POST["name"],'email'=>$_POST["email"],
+                'password'=>$_POST["password"],
+               
+                'hidden'=>0,
+                'admin'=>$_POST["admin"],
+                'updated_at'=>$_POST["updated_at"],
+                'created_at'=>$_POST["created_at"]
+            
+           );
+            $pizza = DB::table('users')->insert($values);
+            return Redirect::to('/users');
+        }
+        else
+        {
+            return view("usersexists");
         }
         //var_dump($_POST);
     }

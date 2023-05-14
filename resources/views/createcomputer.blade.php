@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create </title>
+    <title>Create computer</title>
 </head>
 <body>
 <!DOCTYPE html>
@@ -42,7 +42,7 @@
   <label for="pieces">Computer pieces:</label><br>
   <input type="number" id="processorid" name="pieces" ><br>
   <label for="hidden">hidden</label>
-  <input type="checkbox" name="	hidden" ><br>
+  <input type="checkbox" name="hidden" ><br>
   <div class="gombok_2">
   <input class="btn btn-success" type="submit" value="Submit">
   </div>

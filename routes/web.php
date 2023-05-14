@@ -107,6 +107,25 @@ Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
         ->middleware('auth')
         ->name('insertcomputer');
 
+        Route::get('users', 'App\Http\Controllers\AdminController@get_users')
+        ->middleware('auth')
+        ->name('users');
+        Route::get('editusers/{pizzaid}','App\Http\Controllers\AdminController@edit_users')
+        ->middleware('auth')
+        ->name('editusers');
+        Route::post('modifyusers/{pizzaid}','App\Http\Controllers\AdminController@modify_users')
+        ->middleware('auth')
+        ->name('modifyusers');
+        Route::post('deleteusers/{pizzaid}','App\Http\Controllers\AdminController@delete_users')
+        ->middleware('auth')
+        ->name('deleteusers');
+        Route::get('createusers','App\Http\Controllers\AdminController@create_users')
+        ->middleware('auth')
+        ->name('createusers');
+        Route::post('insertusers','App\Http\Controllers\AdminControllerr@insert_users')
+        ->middleware('auth')
+        ->name('insertusers');
+
 
         Route::get('user', 'App\Http\Controllers\UserController@get_usercontroler')
         ->middleware('auth')
@@ -114,3 +133,5 @@ Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
         Route::get('userproci', 'App\Http\Controllers\UserController@get_proci')
         ->middleware('auth')
         ->name('userproci');
+        
+

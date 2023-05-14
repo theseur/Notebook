@@ -42,5 +42,9 @@
       <input class="btn btn-success" type="submit" value="Computers">  
   </form>
     <br>
+    <form action="{{route('users')}}">
+      <input class="btn btn-success" type="submit" value="users">  
+  </form>
+    <br>
 </body>
 </html>
