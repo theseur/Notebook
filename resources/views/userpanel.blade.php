@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin page</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -28,23 +32,15 @@
 </head>
 <body>
     Helo
-    <br>
-<a href ="{{route('logout')}}">logout</a>
-    <form action="{{route('proci')}}">
+    <a href ="{{route('logout')}}">logout</a>
+    <form action="{{route('userproci')}}">
       <input class="btn btn-success" type="submit" value="Processors">
-    </form>
-    <br>
-      <form action="{{route('opsys')}}">
-        <input class="btn btn-success" type="submit" value="Operation systems">  
     </form>
     <br>
     <form action="{{route('computer')}}">
       <input class="btn btn-success" type="submit" value="Computers">  
   </form>
-    <br>
-    <form action="{{route('users')}}">
-      <input class="btn btn-success" type="submit" value="users">  
-  </form>
+
     <br>
 </body>
 </html>
