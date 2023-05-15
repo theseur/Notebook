@@ -10,8 +10,8 @@
 </head>
 <body>
     <h1>Processors in the datebase</h1>
-    <form action="{{route('createproci')}}">
-        <input class="btn btn-success" type="submit" value="Create a new Processor">
+    <form style="padding-left:30px;" action="{{route('createproci')}}">
+        <input  class="btn btn-success" type="submit" value="Create a new Processor">
     </form>
     <br>
     <form action="{{route('adminpanel')}}">
