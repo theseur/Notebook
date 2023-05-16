@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin page</title>
+    <title>Admin page</title>
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -27,23 +28,28 @@
     <link rel="stylesheet" href="/css/bootstrap3-wysihtml5.min.css">
 </head>
 <body>
-    Helo
+    <h3 class="adminpanel_own_h3">You are on the admin page!</h3>
+    <h4 class="adminpanel_own_h4" style="padding-left: 30px; padding-bottom: 30px; color: white;">Please select the following opportunities!</h4>
     <br>
-<a href ="{{route('logout')}}">logout</a>
-    <form action="{{route('proci')}}">
-      <input class="btn btn-success" type="submit" value="Processors">
+<form class="forms" action="">
+    <a class="btn btn-success" href ="{{route('logout')}}">Logout</a>
+  </form>
+
+    <form class="forms" action="{{route('proci')}}">
+      <br>
+      <input  class="btn btn-success" type="submit" value="Processors">
     </form>
     <br>
-      <form action="{{route('opsys')}}">
+      <form class="forms" action="{{route('opsys')}}">
         <input class="btn btn-success" type="submit" value="Operation systems">  
     </form>
     <br>
-    <form action="{{route('computer')}}">
+    <form class="forms" action="{{route('computer')}}">
       <input class="btn btn-success" type="submit" value="Computers">  
   </form>
     <br>
-    <form action="{{route('users')}}">
-      <input class="btn btn-success" type="submit" value="users">  
+    <form class="forms" action="{{route('users')}}">
+      <input class="btn btn-success" type="submit" value="Users">  
   </form>
     <br>
 </body>

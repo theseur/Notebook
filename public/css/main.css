@@ -1,0 +1,104 @@
+body{
+    background-image: url("/images/notebook.jpg");
+    background-size: contain;
+}
+
+.forms{
+    padding-left: 30px;
+}
+
+.adminpanel_own_h3{
+    padding-left: 30px;
+    color: white;
+}
+
+.adminpanel_own_h4{
+    padding-left: 30px;
+    color: white;
+}
+
+.own_h1{
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.th_1{
+    width: 80px;
+    text-align: center;
+}
+
+.th_2{
+    width: 120px;
+    text-align: center;
+}
+
+.th_o_2{
+    width: 300px;
+    text-align: center;
+}
+
+.th_3{
+    width: 200px;
+    text-align: center;
+}
+
+.th_4{
+    width: 80px;
+    text-align: center;
+}
+
+.td_1{
+    width: 80px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.td_2{
+    width: 80px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.td_3{
+    width: 200px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.td_o_1{
+    width: 80px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.td_o_2{
+    width: 300px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.td_o_3{
+    width: 200px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.td_4{
+    width: 80px;
+    text-align: center;
+    color: #8d9db6;
+}
+
+.own_label_1{
+    color: hsl(230, 5%, 78%);
+    padding-bottom: 10px;
+}
+
+.own_input_1{
+    padding-bottom: 30px;
+}
+
+.gombok_2{
+    padding-top: 30px;
+}

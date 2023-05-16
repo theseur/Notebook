@@ -22,11 +22,7 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 |
 */
 
-Route::get('/Main_page', function () {return view('main_page');});
-Route::get('/About_Us', function () {return view('about_us_page');});
-Route::get('/Notebook', function () {return view('notebook_page');});
-Route::get('/Comment', function () {return view('comment_page');});
-
+Route::get('/main', function () {return view('main_page');});
 
 Route::get('/', function () {
     return view('welcome');
@@ -139,5 +135,7 @@ Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
         Route::get('userproci', 'App\Http\Controllers\UserController@get_proci')
         ->middleware('auth')
         ->name('userproci');
+
+
         
 
