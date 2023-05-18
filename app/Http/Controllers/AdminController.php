@@ -15,7 +15,10 @@ class AdminController extends Controller
 {
     public function get_admincontroler()
     {
-       
+       if(Auth::user()->admin==0)
+       {
+        return redirect('/user');
+       }
         
         return view("adminpanel");
 

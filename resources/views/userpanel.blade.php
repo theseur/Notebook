@@ -31,12 +31,12 @@
     <link rel="stylesheet" href="/css/bootstrap3-wysihtml5.min.css">
 </head>
 <body>
-    Helo
+    
     <a href ="{{route('logout')}}">logout</a>
-    <form action="{{route('userproci')}}">
+    <!--<form action="{{route('userproci')}}">
       <input class="btn btn-success" type="submit" value="Processors">
     </form>
-    <br>
+    <br>-->
     <form action="{{route('computer')}}">
       <input class="btn btn-success" type="submit" value="Computers">  
   </form>
