@@ -27,7 +27,7 @@
     <br>
     
     <form class="forms" action="{{route('adminpanel')}}">
-        <input class="btn btn-success" type="submit" value="Back to the admin main page">
+        <input class="btn btn-success" type="submit" value="Back to the  main page">
     </form> 
     <br>
     
@@ -76,6 +76,10 @@
 </div>
 @endif
 </table>
+
+
+<a href="?page={{$page-1}}">backward></a>
+<a href="?page={{$page+1}}">forward></a>
 
 </body>
 </html>

@@ -136,9 +136,14 @@ class AdminController extends Controller
 
     public function get_computer()
     {
-       
-        $datas = DB::table('computer')->get();
-        return view("computerlist", compact("datas"));
+       $page=1;
+       if(isset($_GET["page"]))
+       {
+        $page=$_GET["page"];
+       }
+        $datas = DB::table('computer')->paginate(10,['*'],'computer',$page);
+        //var_dump($datas);
+        return view("computerlist", compact(["datas","page"]));
 
     }
     public function edit_computer(Request $request, $pizzaid=0)
