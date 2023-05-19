@@ -82,7 +82,7 @@
             </a>
             <ul class="treeview-menu">
               <li class="active"><a href="{{route('computer')}}"><i class="fa fa-circle-o"></i> computer</a></li>
-              <li><a href="{{route('opsys')}}"><i class="fa fa-circle-o"></i> Operatuion systems</a></li>
+              <li><a href="{{route('opsys')}}"><i class="fa fa-circle-o"></i> Operation systems</a></li>
               <li><a href="{{route('proci')}}"><i class="fa fa-circle-o"></i> Processors</a></li>
               <li><a href="{{route('users')}}"><i class="fa fa-circle-o"></i> Users</a></li>
             </ul>
@@ -90,7 +90,7 @@
           <li class="treeview">
             <a href="{{route('logout')}}">
               <i class="fa fa-files-o"></i>
-              <span>Layout Options</span>
+              <span>Logout</span>
               <span class="pull-right-container">
                 <span class="label label-primary pull-right">4</span>
               </span>

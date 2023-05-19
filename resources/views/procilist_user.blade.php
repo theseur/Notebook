@@ -11,13 +11,8 @@
 </head>
 <body>
     <h1 class="own_h1">The following processors are in the datebase</h1>
-    
-    <form class="forms" action="{{route('createproci')}}">
-        <input  class="btn btn-success" type="submit" value="Create a new Processor">
-    </form>
-    <br>
-    
-    <form class="forms" action="{{route('adminpanel')}}">
+        
+    <form class="forms" action="{{route('user')}}">
         <input class="btn btn-success" type="submit" value="Back to the admin main page">
     </form> 
     <br>

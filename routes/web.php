@@ -22,6 +22,8 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 |
 */
 
+Route::get('/main', function () {return view('main_page');});
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -133,5 +135,7 @@ Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])
         Route::get('userproci', 'App\Http\Controllers\UserController@get_proci')
         ->middleware('auth')
         ->name('userproci');
+
+
         
 
